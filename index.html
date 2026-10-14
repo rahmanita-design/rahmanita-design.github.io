@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahmanita Syukri, S.T. | Civil Engineer & Governance Professional</title>
+  <meta name="description" content="Personal Portfolio of Rahmanita Syukri, S.T. - Civil Engineer, Enterprise Risk Management (QRMO), Contract & Legal Administration, and Strategic Human Capital Management at PT Adhi Karya (Persero) Tbk.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%22><text y=%2222%22 font-size=%2224%22>🏗️</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              200: '#bae0fd',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              800: '#0c4a6e',
+              900: '#0f3750',
+              950: '#082132',
+            },
+            amberBrand: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+    }
+    .dark .glass-card {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(51, 65, 85, 0.7);
+    }
+    .gradient-hero {
+      background: radial-gradient(circle at 10% 20%, rgba(2, 132, 199, 0.08) 0%, rgba(248, 250, 252, 0) 50%),
+                  radial-gradient(circle at 90% 80%, rgba(245, 158, 11, 0.08) 0%, rgba(248, 250, 252, 0) 50%);
+    }
+    .timeline-line::before {
+      content: '';
+      position: absolute;
+      left: 1.25rem;
+      top: 0.5rem;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, #0284c7, #cbd5e1);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white transition-colors duration-300">
+
+  <!-- Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-700 to-brand-900 text-white flex items-center justify-center font-bold font-serif text-xl shadow-md shadow-brand-900/20 group-hover:scale-105 transition-transform">
+          RS
+        </div>
+        <div>
+          <span class="block font-bold text-slate-900 tracking-tight text-lg group-hover:text-brand-600 transition-colors">Rahmanita Syukri, S.T.</span>
+          <span class="block text-xs font-medium text-slate-500">Civil Engineer & Governance Professional</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="#about" class="hover:text-brand-600 transition-colors">About</a>
+        <a href="#pillars" class="hover:text-brand-600 transition-colors">Competencies</a>
+        <a href="#experience" class="hover:text-brand-600 transition-colors">Experience</a>
+        <a href="#certifications" class="hover:text-brand-600 transition-colors">Certifications</a>
+        <a href="#leadership" class="hover:text-brand-600 transition-colors">Leadership & Honors</a>
+        <a href="#contact" class="px-5 py-2.5 rounded-full bg-brand-700 hover:bg-brand-800 text-white font-medium shadow-sm hover:shadow transition-all">Get in Touch</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 transition-colors" aria-label="Toggle Navigation">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-6 bg-white border-b border-slate-200 space-y-3 text-sm font-semibold text-slate-700">
+      <a href="#about" class="block py-2 px-3 rounded-lg hover:bg-slate-50">About</a>
+      <a href="#pillars" class="block py-2 px-3 rounded-lg hover:bg-slate-50">Competencies</a>
+      <a href="#experience" class="block py-2 px-3 rounded-lg hover:bg-slate-50">Experience</a>
+      <a href="#certifications" class="block py-2 px-3 rounded-lg hover:bg-slate-50">Certifications</a>
+      <a href="#leadership" class="block py-2 px-3 rounded-lg hover:bg-slate-50">Leadership & Honors</a>
+      <a href="#contact" class="block text-center py-2.5 px-4 rounded-xl bg-brand-700 text-white font-medium mt-2">Get in Touch</a>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section id="hero" class="relative overflow-hidden gradient-hero pt-16 pb-24 md:pt-28 md:pb-36 border-b border-slate-200/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-8 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200/80 text-brand-700 text-xs font-semibold tracking-wide uppercase">
+              <span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
+              Cum Laude Civil Engineering • Universitas Gadjah Mada
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.15]">
+              Rahmanita Syukri, <span class="text-brand-700 font-serif font-normal italic">S.T.</span>
+            </h1>
+
+            <p class="text-lg sm:text-xl font-medium text-slate-600 leading-relaxed max-w-2xl">
+              Civil Engineer | Enterprise Risk (QRMO), Contract & Legal, and Human Capital Management Professional at 
+              <span class="text-slate-900 font-semibold">PT Adhi Karya (Persero) Tbk</span>.
+            </p>
+
+            <p class="text-slate-600 text-base leading-relaxed max-w-2xl">
+              Uniting structural engineering rigor with corporate governance, enterprise risk quantification, public-private contract compliance, and human capital transformation across Indonesia's strategic infrastructure projects.
+            </p>
+
+            <div class="pt-2 flex flex-wrap gap-4 items-center">
+              <a href="#experience" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-brand-700 hover:bg-brand-800 text-white font-semibold shadow-md shadow-brand-800/20 hover:shadow-lg transition-all">
+                <span>Explore Experience</span>
+                <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+              </a>
+              <a href="mailto:rahmanitasyukri@gmail.com" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-slate-700 font-semibold border border-slate-300 shadow-xs hover:border-brand-500 transition-all">
+                <i data-lucide="mail" class="w-4 h-4 text-brand-600"></i>
+                <span>Email Rahmanita</span>
+              </a>
+              <a href="https://wa.me/6285263232185" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold shadow-xs hover:shadow transition-all">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- Key Metric Highlights -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-200/80">
+              <div class="bg-white/80 p-4 rounded-xl border border-slate-200/80 shadow-xs">
+                <div class="text-2xl font-bold text-brand-700">10+ Yrs</div>
+                <div class="text-xs text-slate-500 font-medium">BUMN & Infrastructure</div>
+              </div>
+              <div class="bg-white/80 p-4 rounded-xl border border-slate-200/80 shadow-xs">
+                <div class="text-2xl font-bold text-brand-700">QRMO</div>
+                <div class="text-xs text-slate-500 font-medium">Certified Risk Officer</div>
+              </div>
+              <div class="bg-white/80 p-4 rounded-xl border border-slate-200/80 shadow-xs">
+                <div class="text-2xl font-bold text-brand-700">3.52 / 4.0</div>
+                <div class="text-xs text-slate-500 font-medium">Cum Laude UGM</div>
+              </div>
+              <div class="bg-white/80 p-4 rounded-xl border border-slate-200/80 shadow-xs">
+                <div class="text-2xl font-bold text-brand-700">Aviation</div>
+                <div class="text-xs text-slate-500 font-medium">Airport Mega Projects</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Profile Card -->
+          <div class="lg:col-span-4 flex justify-center">
+            <div class="w-full max-w-sm bg-white rounded-3xl p-6 border border-slate-200 shadow-xl shadow-slate-200/50 relative overflow-hidden">
+              <div class="absolute top-0 right-0 w-32 h-32 bg-brand-100 rounded-full blur-2xl -mr-10 -mt-10 pointer-events-none"></div>
+              
+              <div class="text-center relative">
+                <div class="mx-auto w-32 h-32 rounded-2xl p-1 bg-gradient-to-tr from-brand-600 via-amberBrand-400 to-brand-800 shadow-md mb-4 overflow-hidden">
+                  <div class="w-full h-full rounded-[14px] bg-slate-100 flex items-center justify-center overflow-hidden">
+                    <!-- Avatar Image / Icon -->
+                    <img src="https://avatars.githubusercontent.com/u/335844561?v=4" alt="Rahmanita Syukri, S.T." class="w-full h-full object-cover" onerror="this.src=''; this.className='hidden'; this.nextElementSibling.classList.remove('hidden');">
+                    <div class="hidden text-brand-700 font-serif font-bold text-4xl">RS</div>
+                  </div>
+                </div>
+
+                <h3 class="font-bold text-xl text-slate-900">Rahmanita Syukri, S.T.</h3>
+                <p class="text-xs font-semibold text-brand-700 mt-1 uppercase tracking-wider">PT Adhi Karya (Persero) Tbk</p>
+                <p class="text-sm text-slate-500 mt-1">Jakarta, Indonesia</p>
+                
+                <div class="mt-5 pt-4 border-t border-slate-100 space-y-2.5 text-left text-xs text-slate-600">
+                  <div class="flex items-center gap-2.5">
+                    <i data-lucide="building-2" class="w-4 h-4 text-brand-600 shrink-0"></i>
+                    <span>Talent Management, Human Capital Dept</span>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <i data-lucide="shield-check" class="w-4 h-4 text-brand-600 shrink-0"></i>
+                    <span>ISO 37001 & Enterprise Risk Specialist</span>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <i data-lucide="graduation-cap" class="w-4 h-4 text-brand-600 shrink-0"></i>
+                    <span>B.Eng Civil Engineering - UGM (2015)</span>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <i data-lucide="mail" class="w-4 h-4 text-brand-600 shrink-0"></i>
+                    <a href="mailto:rahmanitasyukri@gmail.com" class="hover:text-brand-600 truncate">rahmanitasyukri@gmail.com</a>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <i data-lucide="phone" class="w-4 h-4 text-brand-600 shrink-0"></i>
+                    <span>+62 852 6323 2185</span>
+                  </div>
+                </div>
+
+                <div class="mt-6 flex justify-center gap-3">
+                  <a href="https://github.com/rahmanita-design" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors" title="GitHub">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                  </a>
+                  <a href="mailto:rahmanitasyukri@gmail.com" class="p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors" title="Email">
+                    <i data-lucide="mail" class="w-4 h-4"></i>
+                  </a>
+                  <a href="https://wa.me/6285263232185" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors" title="WhatsApp">
+                    <i data-lucide="message-square" class="w-4 h-4"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section & Research Interests -->
+    <section id="about" class="py-20 bg-white border-b border-slate-200/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <div class="lg:col-span-5 space-y-4">
+            <span class="text-brand-700 font-bold text-xs uppercase tracking-widest">Executive Profile</span>
+            <h2 class="text-3xl font-bold text-slate-900 tracking-tight leading-tight">
+              Multidisciplinary Expertise Built on Field Engineering & Corporate Strategy
+            </h2>
+            <p class="text-slate-600 text-base leading-relaxed">
+              With a background in Civil Engineering from Universitas Gadjah Mada (Cum Laude), Rahmanita began her career orchestrating mega airport construction sites and has continuously evolved into leadership roles encompassing contractual defense, enterprise risk governance, and organizational talent architecture.
+            </p>
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <h4 class="font-bold text-sm text-slate-900 flex items-center gap-2">
+                <i data-lucide="search" class="w-4 h-4 text-brand-600"></i>
+                Focus & Research Interests
+              </h4>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                Strategic human capital management, organizational restructuring, enterprise risk management (ERM), and governance in project-based organizations.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div class="p-6 rounded-2xl border border-slate-200 bg-white shadow-xs hover:border-brand-300 transition-all">
+              <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center mb-4">
+                <i data-lucide="users" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 text-base mb-1.5">Human Capital Strategy</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Workforce deployment analysis, competency modeling, talent development initiatives, and cross-departmental capability building.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-2xl border border-slate-200 bg-white shadow-xs hover:border-brand-300 transition-all">
+              <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center mb-4">
+                <i data-lucide="shield-alert" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 text-base mb-1.5">Enterprise Risk (ERM)</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                QRMO certified, ISO 37001 anti-bribery framework implementation, internal controls over financial reporting (ICOFR), and project mitigation.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-2xl border border-slate-200 bg-white shadow-xs hover:border-brand-300 transition-all">
+              <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-700 flex items-center justify-center mb-4">
+                <i data-lucide="scale" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 text-base mb-1.5">Contract & Legal Administration</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Administration for owner & subcontractor agreements, legal review, dispute mitigation, and procurement legal compliance.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-2xl border border-slate-200 bg-white shadow-xs hover:border-brand-300 transition-all">
+              <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-4">
+                <i data-lucide="plane" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 text-base mb-1.5">Mega Project Planning & Control</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Soekarno-Hatta Airport Cargo Apron, Taxiway & Intermodal Facilities; EVM monitoring, cost estimation, quantity surveying, and scheduling.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience Timeline -->
+    <section id="experience" class="py-20 bg-slate-50 border-b border-slate-200/60">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-brand-700 font-bold text-xs uppercase tracking-widest">Career Trajectory</span>
+          <h2 class="text-3xl font-bold text-slate-900 tracking-tight mt-1">Professional Experience</h2>
+          <p class="text-sm text-slate-600 mt-2">10-year track record at Indonesia's leading state-owned construction enterprise, PT Adhi Karya (Persero) Tbk.</p>
+        </div>
+
+        <div class="relative timeline-line space-y-10 pl-10 sm:pl-12">
+
+          <!-- Role 1: Talent Management Staff -->
+          <div class="relative group">
+            <div class="absolute -left-10 sm:-left-12 top-1.5 w-7 h-7 rounded-full bg-brand-700 text-white flex items-center justify-center ring-4 ring-slate-50">
+              <i data-lucide="briefcase" class="w-3.5 h-3.5"></i>
+            </div>
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-xs hover:shadow-md transition-shadow">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-brand-50 text-brand-700 border border-brand-200">2025 – Present</span>
+                <span class="text-xs font-medium text-slate-500">Head Office • Jakarta</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">Talent Management Staff</h3>
+              <h4 class="text-sm font-semibold text-brand-800">PT Adhi Karya (Persero) Tbk — Human Capital Department</h4>
+              <ul class="mt-4 space-y-2 text-sm text-slate-600 list-disc list-inside">
+                <li>Support workforce deployment analysis, competency management, and learning program coordination.</li>
+                <li>Contribute to company-wide talent development frameworks and leadership capability initiatives.</li>
+                <li>Partner with organizational restructuring leadership to optimize human resource allocation for project-based demands.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Role 2: Risk Management Staff -->
+          <div class="relative group">
+            <div class="absolute -left-10 sm:-left-12 top-1.5 w-7 h-7 rounded-full bg-slate-800 text-white flex items-center justify-center ring-4 ring-slate-50">
+              <i data-lucide="shield" class="w-3.5 h-3.5"></i>
+            </div>
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-xs hover:shadow-md transition-shadow">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700">2021 – 2025</span>
+                <span class="text-xs font-medium text-slate-500">Infrastructure I Department</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">Risk Management Staff</h3>
+              <h4 class="text-sm font-semibold text-brand-800">PT Adhi Karya (Persero) Tbk — Infrastructure I Department</h4>
+              <ul class="mt-4 space-y-2 text-sm text-slate-600 list-disc list-inside">
+                <li>Supported Enterprise Risk Management (ERM) implementation across nationwide infrastructure projects.</li>
+                <li>Assisted in preparing risk register documentation, quantifying project threats, and continuously monitoring mitigation plans.</li>
+                <li>Facilitated cross-functional risk workshops for project managers, ensuring compliance with ISO 37001 and ICOFR standards.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Role 3: Contract & Legal Staff -->
+          <div class="relative group">
+            <div class="absolute -left-10 sm:-left-12 top-1.5 w-7 h-7 rounded-full bg-slate-800 text-white flex items-center justify-center ring-4 ring-slate-50">
+              <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+            </div>
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-xs hover:shadow-md transition-shadow">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700">2018 – 2021</span>
+                <span class="text-xs font-medium text-slate-500">Infrastructure I Department</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">Contract & Legal Staff</h3>
+              <h4 class="text-sm font-semibold text-brand-800">PT Adhi Karya (Persero) Tbk — Infrastructure I Department</h4>
+              <ul class="mt-4 space-y-2 text-sm text-slate-600 list-disc list-inside">
+                <li>Managed contract administration for project owner agreements and multi-tier subcontractor agreements.</li>
+                <li>Conducted contractual risk reviews, draft amendments, claims prevention, and ensured strict regulatory compliance.</li>
+                <li>Aligned procurement practices with legal standards certified by the Indonesian Procurement Lawyers Association.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Role 4: Project Control Engineer -->
+          <div class="relative group">
+            <div class="absolute -left-10 sm:-left-12 top-1.5 w-7 h-7 rounded-full bg-slate-800 text-white flex items-center justify-center ring-4 ring-slate-50">
+              <i data-lucide="hard-hat" class="w-3.5 h-3.5"></i>
+            </div>
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-xs hover:shadow-md transition-shadow">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700">2016 – 2018</span>
+                <span class="text-xs font-medium text-slate-500">Soekarno-Hatta International Airport</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">Project Control Engineer</h3>
+              <h4 class="text-sm font-semibold text-brand-800">Cargo Apron & Taxiway Construction Project, Soekarno-Hatta International Airport</h4>
+              <ul class="mt-4 space-y-2 text-sm text-slate-600 list-disc list-inside">
+                <li>Monitored project baseline scheduling, earned value indicators, cost metrics, and monthly progress reporting.</li>
+                <li>Interfaced between civil contractors, airside safety authorities, and airport management for seamless apron operations.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Role 5: Project Planning Engineer -->
+          <div class="relative group">
+            <div class="absolute -left-10 sm:-left-12 top-1.5 w-7 h-7 rounded-full bg-slate-800 text-white flex items-center justify-center ring-4 ring-slate-50">
+              <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+            </div>
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-xs hover:shadow-md transition-shadow">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700">2015 – 2016</span>
+                <span class="text-xs font-medium text-slate-500">Soekarno-Hatta International Airport</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">Project Planning Engineer</h3>
+              <h4 class="text-sm font-semibold text-brand-800">Intermodal Facilities Development Project, Soekarno-Hatta International Airport</h4>
+              <ul class="mt-4 space-y-2 text-sm text-slate-600 list-disc list-inside">
+                <li>Prepared comprehensive project schedules and supported cross-functional coordination across engineering, procurement, and operations teams.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Role 6: Quantity Surveyor -->
+          <div class="relative group">
+            <div class="absolute -left-10 sm:-left-12 top-1.5 w-7 h-7 rounded-full bg-slate-800 text-white flex items-center justify-center ring-4 ring-slate-50">
+              <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+            </div>
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-xs hover:shadow-md transition-shadow">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700">2015</span>
+                <span class="text-xs font-medium text-slate-500">PT Adhi Karya (Persero) Tbk</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">Quantity Surveyor</h3>
+              <h4 class="text-sm font-semibold text-brand-800">National Land Agency Training Center Building Project (Phase III)</h4>
+              <ul class="mt-4 space-y-2 text-sm text-slate-600 list-disc list-inside">
+                <li>Assisted quantity take-off calculations, material budgeting, and cost estimation for public building construction.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Academic & Teaching Sub-Section -->
+        <div class="mt-16 pt-12 border-t border-slate-200">
+          <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+            <i data-lucide="book-open" class="w-5 h-5 text-brand-700"></i>
+            Academic & Teaching Experience
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-5 rounded-2xl bg-white border border-slate-200">
+              <span class="text-xs font-semibold text-brand-700">2011 – 2014</span>
+              <h4 class="font-bold text-slate-900 mt-1">Teaching Assistant</h4>
+              <p class="text-xs text-slate-500 mb-2">Department of Civil and Environmental Engineering, UGM</p>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Assisted core undergraduate courses including Structural Analysis, Soil Mechanics II, Building Structures, and Transportation Engineering. Facilitated tutorial sessions, academic mentoring, and examination assessments.
+              </p>
+            </div>
+            <div class="p-5 rounded-2xl bg-white border border-slate-200">
+              <span class="text-xs font-semibold text-brand-700">2013</span>
+              <h4 class="font-bold text-slate-900 mt-1">Practical Work — Transportation Analyst</h4>
+              <p class="text-xs text-slate-500 mb-2">Center for Transportation and Logistics Studies (PUSTRAL), UGM</p>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Assisted transportation impact analysis (ANDALALIN) studies, including field traffic data collection, volume-capacity ratio calculations, and basic analytical modeling for urban traffic assessments.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Certifications & Training Section -->
+    <section id="certifications" class="py-20 bg-white border-b border-slate-200/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-brand-700 font-bold text-xs uppercase tracking-widest">Credentials</span>
+          <h2 class="text-3xl font-bold text-slate-900 tracking-tight mt-1">Certifications & Executive Training</h2>
+          <p class="text-sm text-slate-600 mt-2">Continuous executive development in risk mitigation, financial reporting control, anti-bribery governance, and legal frameworks.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Cert 1: ISO 37001:2025 -->
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-300 transition-all">
+            <span class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-brand-100 text-brand-800 mb-3">2025</span>
+            <h3 class="font-bold text-slate-900 text-base mb-1">ISO 37001:2025 Awareness Training</h3>
+            <p class="text-xs text-brand-700 font-medium mb-2">Anti-Bribery Management System (SMAP)</p>
+            <p class="text-xs text-slate-500">PT BSI Group Indonesia</p>
+          </div>
+
+          <!-- Cert 2: ICOFR 2025 -->
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-300 transition-all">
+            <span class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-brand-100 text-brand-800 mb-3">2025</span>
+            <h3 class="font-bold text-slate-900 text-base mb-1">Internal Control Over Financial Reporting (ICOFR)</h3>
+            <p class="text-xs text-brand-700 font-medium mb-2">Corporate Governance & Controls</p>
+            <p class="text-xs text-slate-500">Deloitte Konsultan Indonesia</p>
+          </div>
+
+          <!-- Cert 3: QRMO 2023 -->
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-300 transition-all">
+            <span class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-amber-100 text-amber-800 mb-3">2023 • Professional Certification</span>
+            <h3 class="font-bold text-slate-900 text-base mb-1">Qualified Risk Management Officer (QRMO)</h3>
+            <p class="text-xs text-brand-700 font-medium mb-2">Enterprise Risk Management Standards</p>
+            <p class="text-xs text-slate-500">PPM Manajemen</p>
+          </div>
+
+          <!-- Cert 4: ISO 37001:2016 Internal Audit -->
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-300 transition-all">
+            <span class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-200 text-slate-800 mb-3">2022</span>
+            <h3 class="font-bold text-slate-900 text-base mb-1">ISO 37001:2016 Internal Audit Training</h3>
+            <p class="text-xs text-brand-700 font-medium mb-2">Anti-Bribery Audit Standards</p>
+            <p class="text-xs text-slate-500">PT Surveyor Indonesia (Persero)</p>
+          </div>
+
+          <!-- Cert 5: Contractual Risk 2021 -->
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-300 transition-all">
+            <span class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-200 text-slate-800 mb-3">2021</span>
+            <h3 class="font-bold text-slate-900 text-base mb-1">Contractual Risk Identification & Mitigation</h3>
+            <p class="text-xs text-brand-700 font-medium mb-2">Infrastructure Projects Legal Framework</p>
+            <p class="text-xs text-slate-500">Engineering Institute</p>
+          </div>
+
+          <!-- Cert 6: Certified Procurement Contract -->
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-300 transition-all">
+            <span class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-200 text-slate-800 mb-3">2019</span>
+            <h3 class="font-bold text-slate-900 text-base mb-1">Certified Procurement Contract Legal Expert</h3>
+            <p class="text-xs text-brand-700 font-medium mb-2">Government & SOE Procurement Law</p>
+            <p class="text-xs text-slate-500">Indonesian Procurement Lawyers Association</p>
+          </div>
+
+        </div>
+
+        <!-- Fresh Grad Mental Training SECAPA -->
+        <div class="mt-6 p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-3 text-xs text-slate-600">
+          <i data-lucide="award" class="w-5 h-5 text-brand-700 shrink-0"></i>
+          <span><strong>Mental Training for Fresh Graduate Development Program (2015):</strong> PT Adhi Karya (Persero) Tbk & Indonesian Army Officer Candidate School (SECAPA TNI AD).</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Leadership, Honors & Education Section -->
+    <section id="leadership" class="py-20 bg-slate-50 border-b border-slate-200/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          
+          <!-- Column 1: Education -->
+          <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-xs space-y-4">
+            <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center">
+              <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Education</h3>
+            <div class="border-t border-slate-100 pt-4">
+              <span class="text-xs font-semibold text-brand-700">2010 – 2015</span>
+              <h4 class="font-bold text-slate-900 text-base mt-1">Universitas Gadjah Mada (UGM)</h4>
+              <p class="text-xs text-slate-600 mt-1">Bachelor of Civil Engineering (S.T.)</p>
+              <div class="mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-semibold border border-emerald-200">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                GPA: 3.52 / 4.00 — Cum Laude
+              </div>
+              <p class="text-xs text-slate-500 mt-3 leading-relaxed">
+                Specialized in Structural & Transportation Engineering, active teaching assistant, and campus leadership.
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 2: Leadership & Community -->
+          <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-xs space-y-4">
+            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center">
+              <i data-lucide="heart-handshake" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Leadership & Advocacy</h3>
+            <div class="space-y-4 border-t border-slate-100 pt-4 text-xs text-slate-600">
+              <div>
+                <span class="font-bold text-slate-900 text-sm block">Strategic Human Capital & Leadership Development</span>
+                <span class="text-slate-500">Rumah Kepemimpinan Nurul Fikri (2012 – 2014)</span>
+                <p class="mt-1 leading-relaxed">Two-year intensive fellowship focused on national leadership, integrity, and social impact.</p>
+              </div>
+              <div class="pt-2 border-t border-slate-100">
+                <span class="font-bold text-slate-900 text-sm block">Training of Trainers (TOT)</span>
+                <span class="text-slate-500">SPAK — 'Saya, Perempuan Anti-Korupsi' (2014)</span>
+                <p class="mt-1 leading-relaxed">National women's anti-corruption movement advocating transparency, governance, and institutional ethics.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 3: Achievements -->
+          <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-xs space-y-4">
+            <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-700 flex items-center justify-center">
+              <i data-lucide="trophy" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Achievements</h3>
+            <div class="space-y-3 border-t border-slate-100 pt-4 text-xs text-slate-600">
+              <div class="flex items-start gap-2.5">
+                <i data-lucide="award" class="w-4 h-4 text-brand-600 shrink-0 mt-0.5"></i>
+                <div>
+                  <strong>Student Creativity Program (PKM)</strong> (2010)
+                  <p class="text-slate-500">Ministry of Higher Education — Entrepreneurship Track</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <i data-lucide="award" class="w-4 h-4 text-brand-600 shrink-0 mt-0.5"></i>
+                <div>
+                  <strong>National Science Olympiad (OSN)</strong> (2009)
+                  <p class="text-slate-500">Astronomy — Senior High School Level</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <i data-lucide="award" class="w-4 h-4 text-brand-600 shrink-0 mt-0.5"></i>
+                <div>
+                  <strong>Provincial Science Olympiad</strong> (2007)
+                  <p class="text-slate-500">Physics — Junior High School Level</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <i data-lucide="award" class="w-4 h-4 text-brand-600 shrink-0 mt-0.5"></i>
+                <div>
+                  <strong>Top 150 Finalist</strong> (2006)
+                  <p class="text-slate-500">PASSIAD National Mathematics Competition</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section id="contact" class="py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+        
+        <div class="space-y-3">
+          <span class="text-brand-700 font-bold text-xs uppercase tracking-widest">Get In Touch</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Let's Connect & Collaborate</h2>
+          <p class="text-base text-slate-600 max-w-xl mx-auto">
+            Open for professional engagements, risk governance consulting, and strategic talent initiatives.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 text-left max-w-2xl mx-auto">
+          <!-- Email Card -->
+          <a href="mailto:rahmanitasyukri@gmail.com" class="p-6 rounded-2xl border border-slate-200 hover:border-brand-500 hover:shadow-md transition-all flex items-center gap-4 group">
+            <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center group-hover:scale-105 transition-transform">
+              <i data-lucide="mail" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider block">Direct Email</span>
+              <span class="text-sm font-bold text-slate-900 group-hover:text-brand-700 transition-colors">rahmanitasyukri@gmail.com</span>
+            </div>
+          </a>
+
+          <!-- WhatsApp Card -->
+          <a href="https://wa.me/6285263232185" target="_blank" rel="noopener noreferrer" class="p-6 rounded-2xl border border-slate-200 hover:border-emerald-500 hover:shadow-md transition-all flex items-center gap-4 group">
+            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center group-hover:scale-105 transition-transform">
+              <i data-lucide="phone-call" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider block">Phone / WhatsApp</span>
+              <span class="text-sm font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">+62 852 6323 2185</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Profile Links -->
+        <div class="pt-4 flex justify-center items-center gap-4">
+          <a href="https://github.com/rahmanita-design" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold transition-all">
+            <i data-lucide="github" class="w-4 h-4"></i>
+            <span>GitHub Profile</span>
+          </a>
+          <button onclick="window.print()" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold transition-all">
+            <i data-lucide="printer" class="w-4 h-4"></i>
+            <span>Print / Save as PDF</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2 text-slate-300">
+        <span class="font-bold text-white">Rahmanita Syukri, S.T.</span>
+        <span>•</span>
+        <span>PT Adhi Karya (Persero) Tbk</span>
+      </div>
+      <div>
+        Deployed live on <a href="https://rahmanita-design.github.io" class="text-brand-400 hover:underline">GitHub Pages</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu on click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
